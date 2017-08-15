@@ -7,7 +7,7 @@ package depuravias;
 
 /**
  *
- * @author Hitss y el Cris
+ * @author Hitss y el buen Cris
  */
 import java.util.Scanner;
 public class DepuraVias {
