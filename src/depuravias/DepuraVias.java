@@ -21,6 +21,22 @@ public class DepuraVias {
                 System.out.println("Tú número es mayor a 10");
             }
         }
+        
+public boolean esNumero(String sCadena) throws Exception{
+
+	String sValidos = "0123456789.-";
+	int iLong = sCadena.length();
+	int i = 0;
+	boolean bEsNumero = true;
+
+	for(i=0;i<iLong;i++){
+		if(sValidos.indexOf(sCadena.substring(i,i+1)) == -1){
+			bEsNumero=false;
+		}
+	}
+
+	return bEsNumero;
+}
     }
 
 
