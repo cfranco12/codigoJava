@@ -12,32 +12,24 @@ package depuravias;
 import java.util.Scanner;
 public class DepuraVias {
 
-        public static void main(String[] ar) {
-            Scanner teclado=new Scanner(System.in);
-            float sueldo;
-            System.out.print("Ingresa un número:");
-            sueldo=teclado.nextFloat();
-            if (sueldo>10) {
-                System.out.println("Tú número es mayor a 10");
-            }
-        }
-        
-public boolean esNumero(String sCadena) throws Exception{
-
-	String sValidos = "0123456789.-";
-	int iLong = sCadena.length();
-	int i = 0;
-	boolean bEsNumero = true;
-
-	for(i=0;i<iLong;i++){
-		if(sValidos.indexOf(sCadena.substring(i,i+1)) == -1){
-			bEsNumero=false;
-		}
-	}
-
-	return bEsNumero;
-}
+    public static void main(String[] ar) {
+        Scanner teclado=new Scanner(System.in);
+        int num1,num2,suma,producto;
+        System.out.print("Ingrese primer valor:");
+        num1=teclado.nextInt();
+        System.out.print("Ingrese segundo valor");
+        num2=teclado.nextInt();
+        suma=num1 + num2;
+        producto=num1 * num2;
+        System.out.print("La suma de los dos valores es:");
+        System.out.println(suma);
+        System.out.print("El producto de los dos valores es:");
+        System.out.println(producto);
     }
+}
+        
+//public boolean esNumero(String sCadena) throws Exception{
+
 
 
     /**
