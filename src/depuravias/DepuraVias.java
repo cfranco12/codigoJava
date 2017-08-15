@@ -9,13 +9,22 @@ package depuravias;
  *
  * @author Hitss
  */
+import java.util.Scanner;
 public class DepuraVias {
+
+        public static void main(String[] ar) {
+            Scanner teclado=new Scanner(System.in);
+            float sueldo;
+            System.out.print("Ingresa un número:");
+            sueldo=teclado.nextFloat();
+            if (sueldo>10) {
+                System.out.println("Tú número es mayor a 10");
+            }
+        }
+    }
+
 
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
-        // TODO code application logic here
-    }
-    
-}
+
